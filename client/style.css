@@ -6,7 +6,7 @@ form {
   background: black;
   padding: 3px;
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
   width: 100%;
 }
 
@@ -35,4 +35,12 @@ form button {
 
 #messages li:nth-child(odd) {
   background: #eee;
+}
+
+#isTyping {
+  /* display: hidden; */
+  bottom: 0;
+  position: fixed;
+  color: gray;
+  font-style: italic;
 }

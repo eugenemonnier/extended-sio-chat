@@ -10,6 +10,9 @@ io.on('connection', socket => {
     console.log('a user sent a chat message:', data)
     io.emit('chat-message', data)
   })
+  socket.on('isTyping', () => {
+    io.emit('isTyping')
+  })
 })
 
 server.listen(3000, () => console.log('socket.io server up on 3000'))
